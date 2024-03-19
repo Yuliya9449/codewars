@@ -16,3 +16,11 @@ function yearDays(year) {
 function sum(numbers) {
   return numbers.reduce((acc, elem) => acc + elem, 0);
 }
+
+//! 3
+// Count the Monkeys!
+// https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript
+
+function monkeyCount(n) {
+  return Array.from({ length: n }, (_, idx) => idx + 1);
+}
