@@ -32,3 +32,16 @@ function monkeyCount(n) {
 function powersOfTwo(n) {
   return Array.from({ length: n + 1 }, (_, idx) => 2 ** idx);
 }
+
+//! 5
+// Count of positives / sum of negatives
+// https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+
+function countPositivesSumNegatives(input) {
+  return input && input.length
+    ? [
+        input.filter((elem) => elem > 0).length,
+        input.filter((elem) => elem < 0).reduce((acc, elem) => acc + elem, 0),
+      ]
+    : [];
+}
