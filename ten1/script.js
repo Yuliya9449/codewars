@@ -24,3 +24,11 @@ function sum(numbers) {
 function monkeyCount(n) {
   return Array.from({ length: n }, (_, idx) => idx + 1);
 }
+
+//! 4
+// Powers of 2
+// https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
+
+function powersOfTwo(n) {
+  return Array.from({ length: n + 1 }, (_, idx) => 2 ** idx);
+}
